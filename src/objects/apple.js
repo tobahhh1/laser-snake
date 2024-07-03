@@ -11,6 +11,7 @@ class Apple extends Phaser.GameObjects.Container {
         super(scene, 500, 50)
         this.moveRect()
         this.sprite = this.scene.add.rectangle(this.x, this.y, WIDTH, HEIGHT, COLOR, 1)
+        this.side_length = WIDTH
     }
 
     intersects(line, thickness=1) {
